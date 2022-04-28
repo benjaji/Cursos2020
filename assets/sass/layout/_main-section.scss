@@ -1,0 +1,18 @@
+main{
+  background-color: pink;
+
+  article{
+    background-color: lightblue;
+  }
+
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: auto;
+}
+
+
+.imagenPerfil{
+  background-color: peru;
+}
