@@ -5,6 +5,7 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Ubuntu:wght@400;700&display=swap");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -11118,24 +11119,115 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+p {
+  font-family: "Poppins", sans-serif;
+}
+
 nav {
   background-color: #000;
 }
+nav img {
+  width: 35px;
+}
+nav ul li {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+}
+nav ul li .nav-link {
+  color: #fff;
+}
+nav ul li .nav-link:hover {
+  color: #FFA500;
+}
 
 header {
-  background-color: purple;
+  background-image: url("../images/desarrolloweb2021t.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 350px;
 }
 
 main {
-  background-color: pink;
+  background-color: #fff;
+  display: grid;
+  padding: 10px;
+  grid-template-columns: 50% 50%;
+  grid-gap: 20px;
 }
 main article {
-  background-color: lightblue;
+  border: 1px solid #000;
 }
-
-.grid-container {
-  display: grid;
-  grid-template-columns: auto;
+main article aside {
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
+}
+main article aside img {
+  border-radius: 100%;
+  border: 1px solid #000;
+  width: 200px;
+}
+main article aside h3, main article aside .h3 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-top: 10px;
+}
+main article aside i {
+  color: #000;
+  font-size: 1.4rem;
+  margin: 0 3px 0 3px;
+}
+main article aside p {
+  text-align: left;
+}
+main article aside h5, main article aside .h5 {
+  background-color: #2E1503;
+  color: #fff;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+  padding: 5px;
+}
+main article aside ul {
+  text-align: left;
+}
+main article aside ul li {
+  list-style: circle;
+}
+main article aside svg {
+  margin-top: 40px;
+  width: 35%;
+}
+main section {
+  border: 1px solid #000;
+}
+main section aside {
+  box-sizing: border-box;
+  border: 1px dotted #060606;
+  margin: 10px;
+  padding: 10px;
+}
+main section aside img {
+  width: 100%;
+}
+main section aside h2, main section aside .h2 {
+  margin-top: 10px;
+  color: #000;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+main section aside h4, main section aside .h4 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  color: #060606;
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+main section aside span {
+  margin-right: 5px;
 }
 
 .imagenPerfil {
@@ -11143,7 +11235,40 @@ main article {
 }
 
 footer {
-  background-color: brown;
+  background-color: #000;
+  height: 100px;
+  display: grid;
+  box-sizing: border-box;
+  padding: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+footer p {
+  color: white;
+  margin: 0;
+}
+footer a {
+  text-decoration: none;
+  color: #fff;
+  margin-right: 30px;
+}
+footer a:hover {
+  color: #FFA500;
+}
+footer input {
+  box-sizing: border-box;
+  padding: 5px;
+  border-radius: 5px;
+}
+footer button {
+  background-color: #FFA500;
+  color: #060606;
+  font-weight: 700;
+  box-sizing: border-box;
+  padding: 5px;
+  border-radius: 5px;
 }
 
 /* media query para breakpoint md */

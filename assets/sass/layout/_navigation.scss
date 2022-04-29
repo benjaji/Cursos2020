@@ -1,3 +1,18 @@
 nav{
-  background-color: #000;
+  background-color: $Black;
+    img{
+      width: 35px;
+    }
+    ul{
+      li{
+        font-family: $UbuntuFont;
+        font-weight: 700;
+          .nav-link{
+            color: $White;
+          }
+          .nav-link:hover{
+            color: $Orange;
+          }
+      }
+    }
 }

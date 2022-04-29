@@ -1,16 +1,88 @@
 main{
-  background-color: pink;
-
+  background-color: $White;
+  display: grid;
+  padding: 10px;
+  grid-template-columns: 50% 50%;
+  grid-gap: 20px;
   article{
-    background-color: lightblue;
+    border: $BlackBorder;
+    aside{
+      box-sizing: border-box;
+      padding: 10px;
+      text-align: center;
+      img{
+        border-radius: 100%;     
+        border: $BlackBorder;
+        width: 200px;
+      }
+      h3{
+        font-family: $UbuntuFont;
+        font-weight: 700;
+        font-size: 1.3rem;
+        margin-top: 10px;
+      }
+      i{
+        color: $Black;
+        font-size: 1.4rem;
+        margin: 0 3px 0 3px;
+      }
+      p{
+        text-align: left;
+      }
+      h5{
+        background-color: $Charcoal;
+        color: $White;
+        font-family: $UbuntuFont;
+        font-weight: 700;
+        font-size: 1.3rem;
+        padding: 5px;
+      }
+      ul{
+        text-align: left;
+          li{
+            list-style: circle;
+          }
+      }
+      svg{
+        margin-top: 40px;
+        width: 35%;
+      }
+    }
+  }
+  section{
+    border: $BlackBorder;
+    aside{
+      box-sizing: border-box;
+      border: $DottedBorder;
+      margin: 10px;
+      padding: 10px;
+        img{
+          width: 100%;
+        }
+        h2{
+          margin-top: 10px;
+          color: $Black;
+          font-family: $UbuntuFont;
+          font-weight: 700;
+          font-size: 1.5rem;
+        }
+        h4{
+          font-family: $UbuntuFont;
+          font-weight: 700;
+          color: $Sable;
+          margin-top: 0;
+          font-size: 1.2rem;
+        }
+        span{
+          margin-right: 5px;
+        }
+
+    }
   }
 
 }
 
-.grid-container{
-  display: grid;
-  grid-template-columns: auto;
-}
+
 
 
 .imagenPerfil{

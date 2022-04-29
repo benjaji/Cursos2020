@@ -1,3 +1,36 @@
 footer{
-  background-color: brown;
+  background-color: $Black;
+  height: 100px;
+  display: grid;
+  box-sizing: border-box;
+  padding: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  p{
+    color: white;
+    margin: 0;
+  }
+  a{
+    text-decoration: none;
+    color: $White;
+    margin-right: 30px;
+  }
+  a:hover{
+    color: $Orange;
+  }
+  input{
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  button{
+    background-color: $Orange;
+    color: $Sable;
+    font-weight: 700;
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: 5px;
+  }
 }
