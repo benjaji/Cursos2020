@@ -1,6 +1,13 @@
 /* media query para breakpoint md */
-@media only screen and (min-width: 768px){
+@media only screen and (max-width: 768px){
   .grid-container{
-    grid-template-columns: auto auto;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  footer{
+    grid-template-columns: repeat(1, 1fr);
+    height: 200px;
+    a{
+      display: none;
+    }
   }
 }

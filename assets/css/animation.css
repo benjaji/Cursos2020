@@ -1,0 +1,19 @@
+.mover{
+    animation: mover 2s ease-in infinite alternate;
+    }
+    @keyframes mover{
+        0% {transform: translateX(0); }
+        100% {transform: translateX(100px);}
+        }
+
+.rotar{
+    animation: rotar 4s infinite linear;
+}
+@keyframes rotar {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }

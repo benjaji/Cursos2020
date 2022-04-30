@@ -11133,10 +11133,10 @@ nav ul li {
   font-family: "Ubuntu", sans-serif;
   font-weight: 700;
 }
-nav ul li .nav-link {
+nav ul li a {
   color: #fff;
 }
-nav ul li .nav-link:hover {
+nav ul li a:hover {
   color: #FFA500;
 }
 
@@ -11152,7 +11152,7 @@ main {
   background-color: #fff;
   display: grid;
   padding: 10px;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
 }
 main article {
@@ -11230,10 +11230,6 @@ main section aside span {
   margin-right: 5px;
 }
 
-.imagenPerfil {
-  background-color: peru;
-}
-
 footer {
   background-color: #000;
   height: 100px;
@@ -11272,9 +11268,17 @@ footer button {
 }
 
 /* media query para breakpoint md */
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .grid-container {
-    grid-template-columns: auto auto;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  footer {
+    grid-template-columns: repeat(1, 1fr);
+    height: 200px;
+  }
+  footer a {
+    display: none;
   }
 }
 

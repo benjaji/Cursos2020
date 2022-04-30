@@ -7,10 +7,10 @@ nav{
       li{
         font-family: $UbuntuFont;
         font-weight: 700;
-          .nav-link{
+          a{
             color: $White;
           }
-          .nav-link:hover{
+          a:hover{
             color: $Orange;
           }
       }

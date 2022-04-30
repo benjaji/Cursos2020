@@ -2,7 +2,7 @@ main{
   background-color: $White;
   display: grid;
   padding: 10px;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
   article{
     border: $BlackBorder;
@@ -46,6 +46,7 @@ main{
       svg{
         margin-top: 40px;
         width: 35%;
+
       }
     }
   }
@@ -82,9 +83,3 @@ main{
 
 }
 
-
-
-
-.imagenPerfil{
-  background-color: peru;
-}
